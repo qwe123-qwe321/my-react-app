@@ -1,9 +1,9 @@
-function App() {
+import React from 'react'
+import FeedbackPage from './pages/FeedbackPage'
+export default function App() {
   return (
-    <div className="text-3xl font-bold text-primary p-8 bg-amber-700">
-      Tailwind CSS 生效啦！
+    <div>
+      <FeedbackPage/>
     </div>
   )
 }
-
-export default App
