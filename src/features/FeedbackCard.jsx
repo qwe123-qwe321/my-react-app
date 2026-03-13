@@ -14,7 +14,6 @@ export default function FeedbackCard() {
       return;
     }
     if (selectedRating >= 4) {
-      // 跳转到感谢页，并携带评分参数
       navigate(`/thank-you?rating=${selectedRating}`);
     } else {
       alert('感谢你的反馈，我们会继续改进！');
@@ -22,13 +21,13 @@ export default function FeedbackCard() {
   };
   return (
     <div className='bg-gray-900 flex items-center justify-center w-100 h-100 rounded-2xl relative'>
-     <StarIconarea></StarIconarea>
-      <TextViewarea></TextViewarea>
+     <StarIconarea/>
+      <TextViewarea/>
       <NumberRating  
       selectedRating={selectedRating} 
         onSelect={setSelectedRating}
         />
-      <SubmitButton onClick={handleSubmit}></SubmitButton>
+      <SubmitButton onClick={handleSubmit}/>
     </div>
   )
 }
