@@ -20,7 +20,7 @@ export default function FeedbackCard() {
     }
   };
   return (
-    <div className='bg-gray-900 flex items-center justify-center w-100 h-100 rounded-2xl relative'>
+    <div className='bg-gray-900 flex items-center justify-center w-100 h-100 rounded-2xl relative '>
      <StarIconarea/>
       <TextViewarea/>
       <NumberRating  
